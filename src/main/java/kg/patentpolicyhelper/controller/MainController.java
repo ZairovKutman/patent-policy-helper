@@ -79,6 +79,8 @@ public class MainController {
                     paymentRepository.save(policyPayment);
                 }
             }
+            return new ModelAndView("index")
+                    .addObject("pdf", String.format("http://92.62.72.170:14002/patent/%d/pdf/%s", patent.getId(), patent.getHash()));
         }
         return new ModelAndView("index");
     }

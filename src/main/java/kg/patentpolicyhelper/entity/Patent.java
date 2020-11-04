@@ -46,4 +46,7 @@ public class Patent {
     @ManyToOne
     @JoinColumn(name = "payment_id")
     private Payment payment;
+
+    @Column(name = "hash")
+    private String hash;
 }

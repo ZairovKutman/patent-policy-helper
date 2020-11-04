@@ -21,5 +21,10 @@
                 <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
             </button>
         </form>
+        <#if pdf??>
+            <footer>
+                <p><a href="${pdf}" target="_blank">PDF</a></p>
+            </footer>
+        </#if>
     </body>
 </html>
