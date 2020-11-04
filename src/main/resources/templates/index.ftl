@@ -11,11 +11,11 @@
         <form method="post">
             <div class="group">
                 <input type="number" name="id" class="used"><span class="highlight"></span><span class="bar"></span>
-                <label>Name</label>
+                <label>ID</label>
             </div>
             <div class="group">
                 <input type="date" name="dateFrom" class="used"><span class="highlight"></span><span class="bar"></span>
-                <label>Email</label>
+                <label>DATE</label>
             </div>
             <button type="submit" class="button buttonBlue">Confirm
                 <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
