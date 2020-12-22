@@ -44,4 +44,13 @@ public class Policy {
     @ManyToOne
     @JoinColumn(name = "payment_fk")
     private Payment payment;
+
+    @Column(name = "number")
+    private String number;
+
+    @Column(name = "sys_doc_status")
+    private Integer docStatus;
+
+    @Column(name = "sf_error_text")
+    private String sfError;
 }
