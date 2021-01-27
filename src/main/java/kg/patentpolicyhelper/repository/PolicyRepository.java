@@ -43,7 +43,7 @@ public interface PolicyRepository extends JpaRepository<Policy, Long> {
             "                        inner join dict_tariff ta on ta.id=sp.tariff_fk  " +
             "                           " +
             "                          " +
-            "            where ta.sf_category is not null and (sp.sys_doc_status in (?1) or sp.sys_doc_status is null) order by sp.created_at DESC limit ?2", nativeQuery = true )
+            "            where sp.payment_fk is not null and sp.number is not null and ta.sf_category is not null and (sp.sys_doc_status in (?1) or sp.sys_doc_status is null) order by sp.created_at DESC limit ?2", nativeQuery = true )
     List<Object[]> findDtos(List<Integer> status, Integer limit);
 
     Policy findPolicyByNumber(String number);
